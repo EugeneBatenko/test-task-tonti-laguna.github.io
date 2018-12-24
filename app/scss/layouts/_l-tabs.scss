@@ -1,0 +1,80 @@
+.l-tabs {
+  margin-bottom: 120px;
+
+  .nav-tabs {
+    margin-top: 115px;
+    border: none;
+    @media screen and (max-width: 1120px) {
+      margin-top: 80px;
+    }
+    @media screen and (max-width: 768px) {
+      margin-top: 0px;
+    }
+
+    .nav-item {
+      border-radius: 12px;
+      &:hover {
+        background-color: white;
+        box-shadow: 0 6px 12px rgba(32, 33, 39, 0.08);
+      }
+
+      .nav-link {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        border-radius: 12px;
+        padding: 30px;
+        @media screen and (max-width: 992px) {
+          padding: 12px;
+        }
+
+        .tab-icon {
+          //margin-top: 2.5px;
+          width: 24px;
+          height: 24px;
+          margin-right: 20px;
+        }
+
+        .text-container {
+          .tab-title {
+            @media screen and (max-width: 992px) {
+              font-size: 14px;
+            }
+          }
+          .tab-description {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 25px;
+            color: $color-main-text;
+            @media screen and (max-width: 992px) {
+              font-size: 12px;
+            }
+          }
+        }
+
+      }
+
+    }
+    .active {
+      border: none;
+    }
+
+  }
+
+  .tab-content {
+
+    .tab-pane {
+      width: 100%;
+
+      img {
+        @media screen and (max-width: 1120px) {
+        width: 100%;
+        object-fit: cover;
+        }
+      }
+
+    }
+
+  }
+
+}

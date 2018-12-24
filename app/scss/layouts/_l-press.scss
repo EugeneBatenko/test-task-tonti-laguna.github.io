@@ -1,0 +1,21 @@
+.l-press {
+  background-color: #ffffff;
+  border: 1px solid $color-border;
+  margin-bottom: 120px;
+
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+    @media screen and (max-width: 992px){
+      justify-content: space-around;
+      align-items: center;
+    }
+    .row {
+      width: 100%;
+    }
+  }
+
+}

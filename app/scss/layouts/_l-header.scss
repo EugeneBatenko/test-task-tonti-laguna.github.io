@@ -1,0 +1,79 @@
+.l-header {
+  z-index: 1000;
+  position: relative;
+
+  .container {
+    margin: 0 auto;
+    top: 30px;
+    right: 0;
+    left: 0;
+    position: absolute;
+
+    .row {
+      width: 100%;
+
+      nav {
+        width: 100%;
+        min-height: 27px;
+
+        ul {
+
+          li {
+            display: flex;
+            align-items: center;
+
+            a {
+              color: white;
+              font-size: 15px;
+            }
+            .btn-light {
+              height: unset;
+              font-size: 14px;
+              color: black;
+              letter-spacing: 0.7px;
+            }
+
+          }
+
+        }
+
+        .hamburger {
+          width: 16px;
+          height: 12px;
+          margin: auto 0;
+          transition: 0.5s ease-in-out;
+          cursor: pointer;
+          position: relative;
+          .line {
+            display: block;
+            position: absolute;
+            height: 2px;
+            width: 50%;
+            opacity: 1;
+            transition: 0.25s ease-in-out;
+            background-color: white;
+            &:nth-child(even) {
+              left: 50%;
+            }
+            &:nth-child(odd) {
+              left:0px;
+            }
+            &:nth-child(1), &:nth-child(2){
+              top: 0;
+            }
+            &:nth-child(3), &:nth-child(4){
+              top: 5px;
+            }
+            &:nth-child(5), &:nth-child(6){
+              top: 10px;
+            }
+          }
+        }
+
+      }
+
+    }
+
+  }
+
+}
